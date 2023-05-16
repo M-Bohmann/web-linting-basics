@@ -1,9 +1,8 @@
 function toggleButton() {
-  const cards = document.querySelectorAll('[data-js=card]');
-  const buttons = card.querySelectorAll('[data-js=buttons]');
+  const cards = document.querySelectorAll('[data-js="card"]');
   cards.forEach(card => {
     const button = card.querySelector('[data-js="button"]');
-    const link = cards.querySelector('[data-js="link"]');
+    const link = card.querySelector('[data-js="link"]');
     const arrow = card.querySelector('[data-js="arrow"]');
     button.addEventListener('click', () => {
       link.classList.toggle('hide');
@@ -11,3 +10,4 @@ function toggleButton() {
     });
   });
 }
+toggleButton();
